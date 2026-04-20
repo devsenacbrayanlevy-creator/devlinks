@@ -81,7 +81,12 @@ body * {
   z-index: 1;
   transform: translateY(-50%);
 
-  animation: slide-back 0.2s;
+  animation: slide-back 0.2s forwards;
+}
+
+.light #switch button {
+  left: 50%;
+  animation: slide-in 0.2s forwards;
 }
 
 .light #switch button:hover {
@@ -178,5 +183,14 @@ footer {
   }
   to {
     left: 0;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
   }
 }

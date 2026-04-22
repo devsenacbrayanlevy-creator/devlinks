@@ -85,7 +85,7 @@ body * {
 }
 
 .light #switch button {
-  left: 50%;
+  left: 32px;
   animation: slide-in 0.2s forwards;
 }
 
@@ -179,18 +179,18 @@ footer {
 /*animation*/
 @keyframes slide-in {
   from {
-    left: 50%;
+    left: 0;
   }
   to {
-    left: 0;
+    left: 50%;
   }
 }
 
 @keyframes slide-back {
   from {
-    left: 0;
+    left: 50%;
   }
   to {
-    left: 50%;
+    left: 0;
   }
 }
